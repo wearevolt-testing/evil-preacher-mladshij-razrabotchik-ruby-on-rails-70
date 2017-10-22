@@ -22,6 +22,8 @@ gem 'knock'
 gem 'oj'
 gem 'oj_mimic_json'
 gem 'active_model_serializers'
+gem 'twitter-bootstrap-rails'
+gem 'jquery-rails'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
