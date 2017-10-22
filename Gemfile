@@ -26,6 +26,7 @@ gem 'twitter-bootstrap-rails'
 gem 'jquery-rails'
 gem 'carrierwave'
 gem 'mini_magick'
+gem 'faker'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -43,6 +44,7 @@ group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'letter_opener'
 end
 
 group :test do

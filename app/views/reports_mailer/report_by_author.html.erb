@@ -1,0 +1,21 @@
+<h2 style="text-decoration: underline;">Posts by author</h2>
+
+<table>
+  <thead>
+    <th style="padding:10px; border: 1px solid #a9a9a9;">Author nickname</th>
+    <th style="padding:10px; border: 1px solid #a9a9a9;">Author email</th>
+    <th style="padding:10px; border: 1px solid #a9a9a9;">Posts</th>
+    <th style="padding:10px; border: 1px solid #a9a9a9;">Comments</th>
+  </thead>
+  <% @users.each do |user| %>
+  <tbody>
+    <tr>
+      <td style="padding:10px; border: 1px solid #a9a9a9;"><%= user.nickname %></td>
+      <td style="padding:10px; border: 1px solid #a9a9a9;"><%= user.email %></td>
+      <td style="text-align:right;padding:10px; border: 1px solid #a9a9a9;"><%= user.posts.size %></td>
+      <td style="text-align:right;padding:10px; border: 1px solid #a9a9a9;"><%= user.comments.size %></td>
+    </tr>
+  </tbody>
+  <% end %>
+</table>
+
