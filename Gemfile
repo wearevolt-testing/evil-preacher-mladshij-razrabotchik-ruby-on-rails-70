@@ -27,6 +27,7 @@ gem 'jquery-rails'
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'faker'
+gem 'delayed_job_active_record'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

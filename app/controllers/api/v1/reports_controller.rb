@@ -11,7 +11,7 @@ class Api::V1::ReportsController < Api::V1::BaseController
         end_day   = Date.parse(end_day)
         render json: {  message: "Report generation started. From #{start_day} to #{end_day} on email #{email}" }
 
-        ReportsMailer.report_by_author(start_day, end_day, email).deliver_now
+        ReportsMailer.delay(queue: "Reports by author", priority: 10).report_by_author(start_day, end_day, email)
       else
         render json: { message: 'Not enough data for report generating' }, status: :unprocessable_entity
       end
