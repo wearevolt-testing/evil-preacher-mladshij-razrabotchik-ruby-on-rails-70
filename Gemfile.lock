@@ -57,6 +57,10 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
+    carrierwave (1.2.1)
+      activemodel (>= 4.0.0)
+      activesupport (>= 4.0.0)
+      mime-types (>= 1.16)
     case_transform (0.2)
       activesupport
     childprocess (0.8.0)
@@ -121,6 +125,7 @@ GEM
     mime-types (3.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0521)
+    mini_magick (4.8.0)
     mini_mime (0.1.4)
     mini_portile2 (2.3.0)
     minitest (5.10.3)
@@ -252,6 +257,7 @@ DEPENDENCIES
   bcrypt (~> 3.1.7)
   byebug
   capybara (~> 2.13)
+  carrierwave
   coffee-rails (~> 4.2)
   database_cleaner
   factory_girl_rails
@@ -260,6 +266,7 @@ DEPENDENCIES
   json_spec
   knock
   listen (>= 3.0.5, < 3.2)
+  mini_magick
   oj
   oj_mimic_json
   pg (~> 0.18)
