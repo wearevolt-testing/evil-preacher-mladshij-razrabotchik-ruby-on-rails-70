@@ -25,9 +25,9 @@
         <div class="col-lg-9">
           <%= bootstrap_flash %>
           <% if current_user %>
-            Вы вошли как <%= current_user.nickname %> | <%= link_to "Выйти", '/logout' %> | <%= link_to "Изменить", edit_user_path %>
+            Вы вошли как <%= current_user.nickname %> | <%= link_to "Log out", '/logout' %> | <%= link_to "Edit", edit_user_path %>
           <% else %>
-            <%= link_to 'Войти', '/login' %>
+            <%= link_to 'Log in', '/login' %>
           <% end %>
           <%= yield %>
         </div>
